@@ -56,31 +56,3 @@ function redimensionarImg ($foto, $ancho_f, $alto_f){
 	return $nbr_img;
 }
 ?>
-
-
-$nombre=$_FILES['foto']['name'];
-		$guardado=$_FILES['foto']['tmp_name'];
-		$nombre2=$_FILES['foto1']['name'];
-		$guardado2=$_FILES['foto1']['tmp_name'];
-		$nombre3=$_FILES['foto2']['name'];
-		$guardado3=$_FILES['foto2']['tmp_name'];
-
-		if(!file_exists('archivos')) {
-			mkdir('archivos',0777,true);
-			if (file_exists('archivos')) {
-				if(move_uploaded_file($guardado, 'archivos/'.$nombre) && move_uploaded_file($guardado2, 'archivos/'.$nombre2) && move_uploaded_file($guardado3, 'archivos/'.$nombre3)){
-				}
-				else {
-					echo "Archivo no se pudo guardar";
-				}
-			}
-		}
-
-		else {
-			if(move_uploaded_file($guardado, 'archivos/'.$nombre) && move_uploaded_file($guardado2, 'archivos/'.$nombre2) && move_uploaded_file($guardado3, 'archivos/'.$nombre3)){
-
-				}
-				else {
-					echo "Archivo no se pudo guardar";
-				}
-		}

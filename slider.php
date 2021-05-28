@@ -3,9 +3,9 @@
         move_uploaded_file($_FILES['foto']['tmp_name'],$_FILES['foto']['name']);
         move_uploaded_file($_FILES['foto1']['tmp_name'],$_FILES['foto1']['name']);
         move_uploaded_file($_FILES['foto2']['tmp_name'],$_FILES['foto2']['name']);
-        $nombre=redimensionarImg($_FILES['foto']['name'], 850, 350);
-        $nombre1=redimensionarImg($_FILES['foto1']['name'], 850, 350);
-        $nombre2=redimensionarImg($_FILES['foto2']['name'], 850, 350);
+        $nombre=redimensionarImg($_FILES['foto']['name'], 800, 350);
+        $nombre1=redimensionarImg($_FILES['foto1']['name'], 800, 350);
+        $nombre2=redimensionarImg($_FILES['foto2']['name'], 800, 350);
 ?> 
 
 <!DOCTYPE html>
@@ -14,11 +14,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="StylesheetS.css">
     <title>Slider</title>
 </head>
 <body>
-    <div class="padre" style="background">
+
+    <div class="padre">
+        <img src="fondo.jpg">
         <div class="container-all">
 
         <input type="radio" id="1" name="image-slide" hidden/>
