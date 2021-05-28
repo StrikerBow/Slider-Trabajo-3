@@ -1,25 +1,58 @@
 body{
 	font-family: MS Gothic;
- 	background-color: #000000;
-    color: orange;
+ 	background-color: #292929;
+    color: #ffa126;
 
 }
-.padre{ border:5px solid rgb(88, 8, 8);
+.padre{ border:5px solid #881111;
     display: flex;
-    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    padding: 50px;
-    min-width: 300px;
+    min-width: 400px;
+    position: relative;
+    object-fit: cover;
 }
 .formulario{
     display: flex;
-    flex-wrap: wrap;
-    background: rgb(56, 56, 56);
+    background: #4e4e4e;
     border: 2px solid black;
     padding: 25px;
-    box-shadow: 0 0 150px 10px rgba(0, 0, 0, 0.945);
+    margin: 50px;
+    box-shadow: 4px 4px 10px 1px #000000;
+    min-width: 300px;
+    z-index: 10;
+    border-radius: 30px;
+    opacity: 95%;
 }
+
+.padre img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+.footer{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    
+}
+.hijo p{
+    
+    font-size: 1.40em;
+}
+.hijo_1 input{
+    width: 100%;
+    margin-bottom: 10px;
+    background: #ffa126;
+    color: #000000;
+
+}
+.hijo input{
+    color:#000000
+}
+
 .hijo{
     margin: 25px;    
 }
