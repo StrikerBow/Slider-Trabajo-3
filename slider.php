@@ -18,7 +18,6 @@
     <title>Slider</title>
 </head>
 <body>
-    
     <div class="padre" style="background">
         <div class="container-all">
 
